@@ -22,9 +22,11 @@ The notebook is structured around four core components:
 
 **`portfolio_optimization.ipynb`** The main notebook containing the entire workflow, from data download and preprocessing to analytical modeling and simulation results.
 
-**`plots/`** Folder containing all generated figures used in the analysis and summary.
+**`plots/`** Folder containing selected figures generated during the analysis.
 
 ## Results Example
+
+Below are selected outputs from the notebook showcasing key results from each phase of the analysis.
 
 **Annualized Correlation Matrix of DJIA Stocks**  
 Visualizes how strongly assets move together based on log returns.
