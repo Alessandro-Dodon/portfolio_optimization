@@ -28,30 +28,30 @@ The notebook is structured around four core components:
 
 Below are selected outputs from the notebook showcasing key results from each phase of the analysis.
 
-**Annualized Correlation Matrix of DJIA Stocks**  
-Visualizes how strongly assets move together based on log returns.
+- **Annualized Correlation Matrix of DJIA Stocks**  
+  Visualizes how strongly assets move together based on log returns.
 
-![Correlation Matrix](plots/corr_matrix.png)
+  ![Correlation Matrix](plots/corr_matrix.png)
 
-**Efficient Frontier with and without Short-Selling**  
-Analytical result from constrained portfolio optimization.
+- **Efficient Frontier with and without Short-Selling**  
+  Analytical result from constrained portfolio optimization.
 
-![Efficient Frontier](plots/efficient_frontier.png)
+  ![Efficient Frontier](plots/efficient_frontier.png)
 
-**Monte Carlo Simulation: Full Universe**  
-Shows how simulated portfolios approximate the analytical efficient frontier using generated weights.
+- **Monte Carlo Simulation: Full Universe**  
+  Shows how simulated portfolios approximate the analytical efficient frontier using generated weights.
 
-![Monte Carlo](plots/monte_carlo.png)
+  ![Monte Carlo](plots/monte_carlo.png)
 
-**Monte Carlo Experiment 2: Long-Only Portfolios from Random Subsets**  
-Highlights variability across 6 different random subsets under long-only constraints.
+- **Monte Carlo Experiment 2: Long-Only Portfolios from Random Subsets**  
+  Highlights variability across 6 different random subsets under long-only constraints.
 
-![Monte Carlo Subsets Long](plots/monte_carlo_subsets_long.png)
+  ![Monte Carlo Subsets Long](plots/monte_carlo_subsets_long.png)
 
-**Monte Carlo Experiment 2: Portfolios with Short Selling from Random Subsets**  
-Same 6 subsets as above but allowing short-selling to illustrate impact on efficiency.
+- **Monte Carlo Experiment 2: Portfolios with Short Selling from Random Subsets**  
+  Same 6 subsets as above but allowing short-selling to illustrate impact on efficiency.
 
-![Monte Carlo Subsets Short](plots/monte_carlo_subsets_short.png)
+  ![Monte Carlo Subsets Short](plots/monte_carlo_subsets_short.png)
 
 ## User Guide
 
