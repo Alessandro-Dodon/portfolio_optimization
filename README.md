@@ -20,11 +20,9 @@ The notebook is structured around four core components:
 
 ## Files
 
-**`portfolio_optimization.ipynb`**  
-The main notebook containing the entire workflow, from data download and preprocessing to analytical modeling and simulation results.
+**`portfolio_optimization.ipynb`** The main notebook containing the entire workflow, from data download and preprocessing to analytical modeling and simulation results.
 
-**`plots/`**  
-Folder containing all generated figures used in the analysis and summary.
+**`plots/`** Folder containing all generated figures used in the analysis and summary.
 
 ## Results Example
 
