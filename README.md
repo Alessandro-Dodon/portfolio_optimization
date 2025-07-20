@@ -1,6 +1,6 @@
 # Portfolio Optimization
 
-This repository contains a portfolio optimization project completed during my Master's in Quantitative Finance at USI Lugano. It applies both analytical and simulation-based techniques to explore optimal asset allocation using DJIA data.
+This repository contains a portfolio theory project completed during my Master's in Quantitative Finance at USI Lugano. It applies both analytical and simulation-based techniques to explore optimal asset allocation using DJIA data.
 
 ## Overview
 
