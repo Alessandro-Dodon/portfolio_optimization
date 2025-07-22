@@ -1,78 +1,97 @@
 # Portfolio Optimization
 
-This repository contains a portfolio theory project completed during my Master's in Quantitative Finance at USI Lugano. It applies both analytical and simulation-based techniques to explore optimal asset allocation using DJIA data.
+This repository contains a portfolio optimization project completed during my Master's in Quantitative Finance at USI Lugano. The project centers around **numerical methods** for solving real-world portfolio selection problems using historical DJIA data.
+
+Both **constrained optimization** (via SLSQP) and **Monte Carlo simulation** techniques are used to construct and analyze optimal portfolios, with a focus on understanding the effects of constraints, short selling, and diversification.
+
+---
 
 ## Overview
 
 The notebook is structured around four core components:
 
 - **Summary Statistics & Volatility Modeling**  
-  Daily log returns of DJIA constituents are analyzed, with annualized statistics and a GARCH(1,1) model applied to the DJIA index for volatility estimation.
+  Daily log returns of DJIA constituents are analyzed. Annualized return and risk metrics are calculated, and a GARCH(1,1) model is applied to the DJIA index to capture conditional volatility.
 
-- **Efficient Frontier Construction**  
-  Analytical frontiers are computed both with and without short-selling, highlighting the role of constraints in shaping optimal portfolios.
+- **Efficient Frontier via Constrained Optimization**  
+  The efficient frontier is computed numerically using SLSQP, both with and without short-selling. A second version includes **custom constraints** (e.g., minimum/maximum weight per asset, limited short exposure) to reflect practical investment policies.
 
 - **Monte Carlo Experiment 1**  
-  Random portfolios are generated using truncated normal and Dirichlet distributions to approximate the efficient frontier and explore the limits of simulation vs. analytical methods.
+  A large number of portfolios are randomly generated using Dirichlet and truncated normal distributions. This experiment approximates the efficient frontier and compares simulated outcomes to optimized portfolios.
 
 - **Monte Carlo Experiment 2**  
-  Multiple random subsets of stocks are used to show how diversification influences return–risk characteristics and overall portfolio efficiency.
+  Multiple random subsets of 5 stocks each are analyzed to show how diversification (or lack thereof) impacts risk–return characteristics under both long-only and short-selling conditions.
+
+---
 
 ## Files
 
-**`portfolio_optimization.ipynb`** The main notebook containing the entire workflow, from data download and preprocessing to analytical modeling and simulation results.
+- **`portfolio_optimization.ipynb`**  
+  The main notebook containing the full workflow: data acquisition, numerical optimization, Monte Carlo simulations, and all plots/tables.
 
-**`plots/`** Folder containing selected figures generated during the analysis.
+- **`plots/`**  
+  Folder containing selected output figures from the analysis.
+
+---
 
 ## Results Example
 
-Below are selected outputs from the notebook showcasing key results from each phase of the analysis.
+Below are selected visual outputs showcasing key findings from the analysis:
 
 - **Annualized Correlation Matrix of DJIA Stocks**  
-  Visualizes how strongly assets move together based on log returns.
+  Visualizes how strongly stocks co-move based on log returns.
 
   ![Correlation Matrix](plots/corr_matrix.png)
 
 - **Efficient Frontier with and without Short-Selling**  
-  Analytical result from constrained portfolio optimization.
+  Computed using SLSQP without custom bounds.
 
   ![Efficient Frontier](plots/efficient_frontier.png)
 
+- **Efficient Frontier with Custom Constraints**  
+  Reflects real-world bounds on asset weights. Shows that portfolio efficiency is preserved even with tighter constraints.
+
+  ![Custom Efficient Frontier](plots/custom_efficient_frontier.png)
+
 - **Monte Carlo Simulation: Full Universe**  
-  Shows how simulated portfolios approximate the analytical efficient frontier using generated weights.
+  Demonstrates how simulated portfolios approximate the efficient frontier using random weight generation.
 
   ![Monte Carlo](plots/monte_carlo.png)
 
 - **Monte Carlo Experiment 2: Long-Only Portfolios from Random Subsets**  
-  Highlights variability across 6 different random subsets under long-only constraints.
+  Illustrates performance variability and volatility across 6 random 5-stock portfolios under long-only constraints.
 
   ![Monte Carlo Subsets Long](plots/monte_carlo_subsets_long.png)
 
 - **Monte Carlo Experiment 2: Portfolios with Short Selling from Random Subsets**  
-  Same 6 subsets as above but allowing short-selling to illustrate impact on efficiency.
+  Same 6 subsets as above, but allowing short positions, showing increased frontier flexibility.
 
   ![Monte Carlo Subsets Short](plots/monte_carlo_subsets_short.png)
+
+---
 
 ## User Guide
 
 1. **Setup**  
-   - Clone the repository (Recommended):  
+   - Clone the repository:
      ```bash
      git clone https://github.com/Alessandro-Dodon/portfolio_optimization.git
      cd portfolio_optimization
      ```
-   - Or download as ZIP and extract locally.
+   - Or download the ZIP and extract locally.
 
 2. **Execution**  
    - Open `portfolio_optimization.ipynb` in Jupyter Lab, VS Code, or Anaconda.  
    - Run all cells to reproduce the analysis.  
-   - An internet connection is required to download data from Yahoo Finance.
+   - An internet connection is required to fetch financial data from Yahoo Finance.
 
 3. **Dependencies**  
-   - All required libraries are listed in the notebook.  
-   - Use the `pip install` lines provided if any packages are missing.
+   - All necessary libraries are listed in the notebook header.  
+   - Use `pip install` for any missing packages (e.g., `yfinance`, `arch`, `scipy`, `seaborn`).
+
+---
 
 ## Contact
 
 For questions or feedback, feel free to email me at **alessandro.dodon@usi.ch**.  
-You can also find my LinkedIn profile via my GitHub bio.
+You can also connect via [LinkedIn](https://github.com/Alessandro-Dodon) through my GitHub profile.
