@@ -1,4 +1,4 @@
-# Numerical Methods for Portfolio Optimization
+# Portfolio Optimization
 
 This repository contains a portfolio optimization project completed during my Master's in Quantitative Finance at USI Lugano. The project centers around **numerical methods** for solving real-world portfolio selection problems using historical DJIA data.
 
