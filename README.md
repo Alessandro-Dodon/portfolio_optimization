@@ -26,11 +26,9 @@ The notebook is structured around four core components:
 
 ## Files
 
-- **`portfolio_optimization.ipynb`**  
-  The main notebook containing the full workflow: data acquisition, numerical optimization, Monte Carlo simulations, and all plots/tables.
+- **`portfolio_optimization.ipynb`** The main notebook containing the full workflow: data acquisition, numerical optimization, Monte Carlo simulations, and all plots/tables.
 
-- **`plots/`**  
-  Folder containing selected output figures from the analysis.
+- **`plots/`** Folder containing selected output figures from the analysis.
 
 ---
 
