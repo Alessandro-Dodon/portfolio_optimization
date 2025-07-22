@@ -17,7 +17,7 @@ The notebook is structured around four core components:
   The efficient frontier is computed numerically using SLSQP, both with and without short-selling. A second version includes **custom constraints** (e.g., minimum/maximum weight per asset, limited short exposure) to reflect practical investment policies.
 
 - **Monte Carlo Experiment 1**  
-  A large number of portfolios are randomly generated using Dirichlet and truncated normal distributions. This experiment approximates the efficient frontier and compares it to constrained optimization results.
+  A large number of portfolios are randomly generated using Dirichlet and truncated normal distributions. This experiment approximates the efficient frontier and provides insight into how simulated portfolios compare to those found through constrained optimization.
 
 - **Monte Carlo Experiment 2**  
   Multiple random subsets of 5 stocks each are analyzed to show how diversification (or lack thereof) impacts risk–return characteristics under both long-only and short-selling conditions.
