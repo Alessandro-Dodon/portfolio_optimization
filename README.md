@@ -47,7 +47,7 @@ Below are selected visual outputs showcasing key findings from the analysis:
   ![Efficient Frontier](plots/efficient_frontier.png)
 
 - **Efficient Frontier with Custom Constraints**  
-  Reflects real-world bounds on asset weights. Shows that portfolio efficiency is preserved even with tighter constraints.
+  Reflects real-world bounds on asset weights. 
 
   ![Custom Efficient Frontier](plots/custom_efficient_frontier.png)
 
